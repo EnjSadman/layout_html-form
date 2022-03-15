@@ -1,1 +1,14 @@
 /* styles go here */
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+.rows {
+  display: block;
+  margin: 0 0 10px;
+}
+
+.rows:last-child {
+  margin: 0;
+}
