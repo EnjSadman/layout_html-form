@@ -85,6 +85,7 @@
              name="catsY/N"
              id="catsY"
              class="radio_cats"
+             value="Yes"
             > Yes
           </label>
           <label>
@@ -93,6 +94,7 @@
              name="catsY/N"
              id="catsN"
              class="radio_cats"
+             value="No"
              > No
           </label>
         </label>
@@ -109,7 +111,7 @@
            step="2"
           >
         </label>
-        <label class="rows">What are your favorite brand of cars
+        <label class="rows">What are your favorite brand of cars?
           <select
            multiple
            name="liked_cars"
@@ -125,17 +127,22 @@
             </option>
           </select>
         </label>
-        <label class="rows">How do you rate our job?
+        <label class="rows">How do you rate our work?
           <input
            type="range"
            value="1"
+           min="1"
+           max="100"
            >
         </label>
       </fieldset>
       <fieldset>
         <legend>Additional info:</legend>
         <label class="rows">Comments:
-          <textarea>
+          <textarea
+           name="comments"
+           rows = "2"
+           >
 
           </textarea>
         </label>
@@ -144,19 +151,18 @@
            name="recommendation"
            id="recommendation"
            >
-            <option>
+            <option value="yes">
               yes
             </option>
-            <option>
+            <option value="no">
               no
             </option>
           </select>
         </label>
       </fieldset>
-      <button
-       type="submit"
-       name="submit_button"
-       >Submit</button>
+      <button type="submit">
+        Submit
+      </button>
     </form>
   </body>
 </html>
